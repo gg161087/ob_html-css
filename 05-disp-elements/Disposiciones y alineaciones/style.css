@@ -1,0 +1,24 @@
+html{
+    background-color: darkslategrey;
+}
+/* si un elemento tiene display: inline; no se puede cambiar el tamaño, hay que cambiar a inline-block */
+.div-1{
+    
+    background-color: dimgray;
+}
+.div-2{    
+    background-color: darkgray;
+
+}
+.span-1{
+    background-color: aquamarine;
+    float: left;/*con esta propiedad a los elementos que tienen display inline, se los puede ubicar*/
+}
+.span-2{
+    background-color: cadetblue;
+    float: right;
+}
+.img{    
+    width: 40px;
+    height: 50px;
+}

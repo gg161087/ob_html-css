@@ -1,0 +1,34 @@
+body{
+    background-color: darkslategray;
+    color: peru;
+}
+.flex{
+    /*posiciona ordenada dentro del mismo*/
+    display: flex;
+    /*el eje principal por defecto es el horizontal, flex-direction column para cambiarlo*/
+    flex-direction: column;
+    background-color: lightblue;
+    height: 400px;
+    justify-content: space-around;
+    flex-wrap: wrap;/*mantiene el tamaño de los elementos hijos*/
+    /*align-items es posionar a lo alto del contenedor*/
+    align-items: center;
+}
+.container-1{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid darkslateblue;
+}
+.container-2{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid darkslateblue;
+}
+.container-3{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid darkslateblue;
+}

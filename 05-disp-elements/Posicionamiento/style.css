@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(19, 32, 32);
+    color: peru;
+}
+div {
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+.static {
+    position: static;
+    
+}
+.relative {
+    position: relative;
+    left: 80px; /*para posicionar div */
+}
+.fixed {
+    /*posicionamiento fijo en relacion a la pantalla */
+    /*generalmente sobre todo el contenido, para ellos se le indica z-index*/
+    position: fixed;
+    bottom: 600;
+    left: 10px;
+    z-index: 10px;    
+}
+.absolute {
+    /*Lo comun es poner un absolute dentro de un div relative*/
+    /*ya que depende del contenedor padre*/
+    position: absolute;
+    left: 100px;
+}
+.sticky {
+    /*fija con una especie de fixed (que esta siempre en pantalla) y relative*/
+    /*utilizada generalmente para menus*/
+    position: sticky;
+    z-index: 2;
+}
+.container{
+    left: 170px;
+    width: 350px;
+    height: 40px;
+    background-color: lightgray;
+}
