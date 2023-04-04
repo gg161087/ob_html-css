@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- 
+        https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+        https://www.w3schools.com/css/css_pseudo_classes.asp
+     -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Clases</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .hover{
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+        }
+        a{
+            text-decoration: none;
+        }
+        .hover:hover{
+            background-color: burlywood;
+        }
+        .listado{
+            padding: 15px;
+            background-color: aquamarine;            
+        }
+        .listado p:first-child{
+            color: blue;
+        }
+        a:link{
+            color: darkcyan;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            color: pink;
+        }
+        a:active{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus aspernatur asperiores dolorem, soluta impedit officia ea libero voluptatem, enim error ratione?</p>
+    </div>
+    <div class="listado">
+        <p>Parrafo 1</p>
+        <p>Parrafo 2</p>
+        <p>Parrafo 3</p>
+    </div>
+    <div class="enlaces">
+        <a href="http://google.com" target="_blank">Google</a>
+        <a href="https://picsum.photos/" target="_blank">Picsum</a>
+    </div>        
+</body>
+</html>

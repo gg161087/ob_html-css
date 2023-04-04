@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Especificidad</title>
+</head>
+<body> 
+    <h1 class="h1-clase" id="h1-id">En medio de la dificultad reside la oportunidad</h1>
+    <p class="p-clase" id="p-id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore perferendis necessitatibus incidunt debitis molestias id, reiciendis consectetur eum odit aliquid ipsam sed qui reprehenderit tempora excepturi quisquam enim dolor quam?
+    Eius numquam omnis harum suscipit eaque excepturi repudiandae in iure blanditiis commodi quam consectetur at delectus, dicta earum cumque dolorem perferendis, facilis nisi asperiores corrupti ipsa quis? Praesentium, dolorum quibusdam.
+    Fugiat ipsa, blanditiis amet minus provident quam itaque voluptates illum? Esse odio cupiditate accusamus sed quae, recusandae ad obcaecati dicta expedita perferendis adipisci. Quis praesentium officia ullam error magnam.</p>
+    <div class="libro">
+        <p>¿Qué es la especificidad de CSS?<br>La especificidad es la manera mediante la cual los navegadores deciden qué valores de una propiedad CSS son más relevantes para un elemento y, por lo tanto, serán aplicados. La especificidad está basada en las reglas de coincidencia que están compuestas por diferentes tipos de selectores CSS</p>
+    </div>
+    <div class="listado">
+        <h2>De Mayor a menor peso:</h2>        
+        <div class="lista-especificidad">
+            <div>
+                <ol>            
+                    <li>!important</li>
+                    <li>Estilos en línea</li>
+                    <li>#ID</li>
+                    <li>.Clases</li>
+                    <li>&lt;Elementos/&gt; <!--<Elementos/>--></li>
+                </ol>
+            </div>
+            <div>
+                <ol>            
+                    <li>Especifidad: (3, 0, 0)</li>
+                    <li>Especifidad: (2, 0, 0)</li>
+                    <li>Especifidad: (1, 0, 0)</li>
+                    <li>Especifidad: (0, 2, 0)</li>
+                    <li>Especifidad: (0, 0, 1)</li>
+                </ol>
+            </div>
+        </div>
+        <h3>A igualdad de peso, aplica el ultimo</h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">Link MDN</a>
+    </div>    
+</body>
+</html>
