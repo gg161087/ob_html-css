@@ -1,0 +1,65 @@
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin: 1rem;
+}
+.input{
+    width: 100%;
+    padding: 5px 10px;
+    border: 2px solid green;
+    border-radius: 10px;    
+}
+.input[type="password"]{
+    color: blue;
+}
+
+.input-moderno{
+    border: none;
+    border-bottom: 2px solid #7d7676;
+    outline: none;
+    padding: 5px 5px;
+    color: #212020;
+}
+.input-moderno::placeholder{
+    color: #7d7676;
+}
+.input-moderno:focus{
+    border-bottom: 2px solid #212020;
+}
+.input-background{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    outline: none;
+    color: rgb(37, 66, 67);
+    box-shadow:0 0 10px #878484;
+}
+.input-background::placeholder{
+    color: darkslategray;
+}
+.input-search{
+    padding: 1rem;
+    padding-left: 2rem;
+    border: none;
+    background-color: #eee;
+    border-radius: 1rem;
+    background-image: url('./lupa30.png');
+    background-repeat: no-repeat;
+    background-position: 5px;
+    outline: none;
+}
+textarea{
+    margin: 1rem;
+    resize: none;
+}
+select{
+    margin: 1rem;
+    width: 100%;
+    height: 2rem;
+    background-color: #878484;
+    color: #212020;
+}
